@@ -185,11 +185,11 @@ STRIPE_PUBLIC_KEY = env['STRIPE_PUBLIC_KEY']
 
 STRIPE_PRIVATE_KEY = env['STRIPE_PRIVATE_KEY']
 
-# CHANNEL_LAYERS = {
-#     'default': {
-#         'BACKEND': 'channels_redis.core.RedisChannelLayer',
-#         'CONFIG': {
-#             'hosts': [('redis', 6379)],
-#         },
-#     },
-# }
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            'hosts': [('redis', 6379)],
+        },
+    },
+}
