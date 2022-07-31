@@ -9,6 +9,7 @@ class NotificationView(APIView):
     def get(self, request, *args, **kwargs):
         try:
             print(send_event('test', 'message', {'text': 'hello world'}))
+            send_event('test', 'notification', {'text': 'hello developer'})
             response = {
                 'success': True,
                 'message': 'Success'
