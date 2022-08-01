@@ -144,38 +144,33 @@ DJANGO_REST_PASSWORDRESET_TOKEN_CONFIG = {
 }
 
 CORS_ALLOW_METHODS = [
-    '*'
-    # 'DELETE',
-    # 'GET',
-    # 'OPTIONS',
-    # 'PATCH',
-    # 'POST',
-    # 'PUT',
-    # 'HEAD'
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+    'HEAD'
 ]
-
 CORS_ALLOW_HEADERS = [
-    '*'
-    # 'accept',
-    # 'accept-encoding',
-    # 'authorization',
-    # 'content-type',
-    # 'dnt',
-    # 'origin',
-    # 'user-agent',
-    # 'x-csrftoken',
-    # 'x-requested-with',
-    # 'content-type',
-    # 'connection',
-    # 'user-agent',
-    # 'referer',
-    # 'access-control-allow-origin'
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+    'content-type',
+    'connection',
+    'user-agent',
+    'referer'
 ]
-
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = False
 # CORS_ALLOW_METHODS = ["*"]
-CORS_ALLOWED_ORIGINS = ["http://localhost:80"]
+CORS_ALLOWED_ORIGINS = ["*"]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
